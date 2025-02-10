@@ -1,0 +1,17 @@
+---
+import { SITE_CONTENT } from "@config";
+import Hero from "@components/Hero.astro";
+import Layout from "@layouts/Layout.astro";
+import Experience from "@components/Achievements.astro";
+import Projects from "@components/Projects.astro";
+import About from "@components/About.astro";
+import Technologies from "@components/Technologies.astro";
+---
+
+<Layout>
+  <Hero {...SITE_CONTENT.hero} />
+  <About {...SITE_CONTENT.about} name={SITE_CONTENT.hero.name} />
+  <Experience achievements={SITE_CONTENT.achievements} />
+  <Projects projects={SITE_CONTENT.projects} />
+  <Technologies technologies={SITE_CONTENT.technologies}/>
+</Layout>

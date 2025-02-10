@@ -1,0 +1,35 @@
+---
+import Section from "./Section.astro";
+import type { TechnologyProps } from "@types";
+
+interface Props {
+  technologies: TechnologyProps[];
+}
+
+const { technologies } = Astro.props;
+---
+
+<Section text="Technologies" href="technologies">
+  {
+    technologies.map(({ type, stack}) => (
+      <div class="mb-10">
+        <div class="flex flex-col items-start pb-5">
+          <h4 class="text-2xl font-serif text-primary font-medium mb-0.5">
+            {type}
+          </h4>
+        </div>
+        {Array.isArray(stack) ? (
+          <ul class="grid grid-cols-2 gap-4 list-none">
+            {stack.map((log) => (
+              <li class="text-base relative text-neutral pl-8 mb-3 before:absolute before:left-0 before:top-1 before:content-[url(/check.svg)]">
+                {log}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-base text-neutral">{stack}</p>
+        )}
+      </div>
+    ))
+  }
+</Section>
