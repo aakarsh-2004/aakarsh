@@ -74,7 +74,7 @@ export const SITE_CONTENT: SiteContent = {
       summary: "Built a real-time facial recognition system for law enforcement, enabling instant suspect and missing person detection through live CCTV analysis.",
       linkPreview: "https://frt-system-client.vercel.app",
       linkSource: "https://github.com/aakarsh-2004/police-frt-system/",
-      image: "/spotifu.png",
+      image: "/police-frt.png",
     },
     {
       name: "We-Hangout",
