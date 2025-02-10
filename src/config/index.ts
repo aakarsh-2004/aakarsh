@@ -19,7 +19,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "LinkedIn", href: "https://www.linkedin.com/in/aakarsh-beohar" },
     { text: "Github", href: "https://github.com/aakarsh-2004" }
   ],
-  socialImage: "/zen-og.png",
+  socialImage: "/aakarsh-small.jpeg",
   canonicalURL: "https://aakarshh.in",
 };
 
