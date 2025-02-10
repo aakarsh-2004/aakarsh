@@ -6,6 +6,7 @@ import type { AboutProps, HeroProps } from "@types";
 type Props = AboutProps & Pick<HeroProps, "name">;
 
 const { description, image, name } = Astro.props;
+
 ---
 
 <Section text="About Me" href="about">

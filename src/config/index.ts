@@ -85,10 +85,10 @@ export const SITE_CONTENT: SiteContent = {
     },
     {
       name: "Pay.me",
-      summary: "App to manage and send money to your friends. Built with Monorepo architecture",
+      summary: "App to manage and send money to your friends. Built with Monorepo architecture. Replicating transactions in database, row locking mechanism and bank webhooks. NextAuth for auth.",
       linkPreview: "/",
       linkSource: "https://github.com/aakarsh-2004/pay.me",
-      image: "/clone-ig.png",
+      image: "/pay-me.png",
     },
   ],
   about: {
