@@ -1,4 +1,3 @@
-import Technologies from "@components/Technologies.astro";
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
@@ -82,6 +81,13 @@ export const SITE_CONTENT: SiteContent = {
       linkPreview: "https://we-hangout.vercel.app/",
       linkSource: "https://github.com/aakarsh-2004/we-hangout",
       image: "/we-hangout2.png",
+    },
+    {
+      name: "Google Docs",
+      summary: "Google Docs like app for real time collaboration and editing document files",
+      linkPreview: "https://docs.aakarshh.in/",
+      linkSource: "https://github.com/aakarsh-2004/google-docs",
+      image: "/google-docs.png",
     },
     {
       name: "Pay.me",
